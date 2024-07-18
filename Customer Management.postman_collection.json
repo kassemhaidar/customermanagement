@@ -1,0 +1,306 @@
+{
+	"info": {
+		"_postman_id": "8c5fea07-a157-44c2-9150-f17fde65dba5",
+		"name": "Customer Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30214546"
+	},
+	"item": [
+		{
+			"name": "Get Customer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "localhost:8002/api/custmanag/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"custmanag",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find All Customers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "localhost:8002/api/custmanag",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"custmanag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Customer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "localhost:8002/api/custmanag/search?name=C&address&mobileNumber&page=0&pageSize=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"custmanag",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "C"
+						},
+						{
+							"key": "address",
+							"value": null
+						},
+						{
+							"key": "mobileNumber",
+							"value": null
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Customer Plus\",\r\n    \"address\" : \"Main St 1\",\r\n    \"mobileNumber\" : \"009613123123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8002/api/custmanag",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"custmanag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"12\",\r\n    \"name\" : \"Customer Plus\",\r\n    \"address\" : \"Main St 1\",\r\n    \"mobileNumber\" : \"009613123123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8002/api/custmanag",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"custmanag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "localhost:8002/api/custmanag/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"custmanag",
+						"9"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "password",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
